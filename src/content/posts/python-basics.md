@@ -15,14 +15,13 @@ draft: false
 
 Python 语法接近自然语言，==可读性极高==，适合初学者入门，也广泛用于数据分析、人工智能、自动化脚本与 Web 后端。它由 Guido van Rossum 于 1991 年发布，奉行「优雅、明确、简单」的设计哲学。
 
-::: tip[学习建议]
+::: tip 学习建议
 先跑通「能运行」，再谈「写得好」。每天写一点、跑一点，比只看不练有效得多。
 :::
 
 ## 第一个程序
 
-::: steps{title="三步跑通第一个 Python 程序"}
-
+:::steps[三步跑通第一个 Python 程序]
 1. **安装 Python**
 
    到 python.org 下载 3.x 版本并安装，终端验证：
@@ -40,7 +39,6 @@ Python 语法接近自然语言，==可读性极高==，适合初学者入门，
    ```bash
    python hello.py
    ```
-
 :::
 
 ```python {1} title="hello.py"
@@ -148,7 +146,6 @@ Python 的列表推导式 [+listcomp] 非常简洁，值得优先掌握。
 | set 集合 | `{1, 2, 3}` | 无序、去重 |
 
 ::: collapse accordion
-
 - :+ 列表常用操作
 
   `append(x)` 追加、`pop()` 弹出、`sort()` 排序、`len(lst)` 求长度、切片 `lst[1:3]` 取子列表。
@@ -160,7 +157,6 @@ Python 的列表推导式 [+listcomp] 非常简洁，值得优先掌握。
 - 集合常用操作
 
   `add(x)` 添加、`remove(x)` 删除、`|` 并集、`&` 交集、`-` 差集。
-
 :::
 
 ```python title="data_structures.py"
@@ -176,7 +172,7 @@ print(set(nums) & {2, 5})  # {2}
 
 ## 面向对象
 
-::: code-tree{title="一个最小的 Python 项目" entry="main.py" height="360px"}
+:::code-tree{title="一个最小的 Python 项目" entry="main.py" height="360px"}
 
 ```python title="main.py"
 from models import User
@@ -197,7 +193,7 @@ class User:
 
 :::
 
-::: file-tree{title="项目结构示例"}
+:::file-tree{title="项目结构示例"}
 - main.py
 - models.py
 - requirements.txt
@@ -256,26 +252,6 @@ flowchart TD
     E --> F
     F --> G[结束]
 ```
-
-## 参数说明（字段组）
-
-:::: field-group
-
-::: field name
-@type str
-@required
-
-用户名，用于登录与展示。
-:::
-
-::: field age
-@type int
-@optional
-
-年龄，默认值为 `0`。
-:::
-
-::::
 
 ::github{repo="python/cpython"}
 
